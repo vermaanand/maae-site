@@ -13,11 +13,11 @@
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      flex-direction: column;
-      backdrop-filter: brightness(0.7);
+      position: relative;
     }
 
     h1 {
@@ -29,9 +29,22 @@
       font-size: 1.5rem;
       margin: 0.2rem;
     }
+
+    .bottom-text {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.25rem;
+      color: #00aaff;
+    }
   </style>
 </head>
 <body>
-  <h3>She understands. She learns. She’s almost here.</h3>
+  <h1>Coming Soon</h1>
+  <div class="bottom-text">
+    <h3>She understands. She learns. She’s almost here.</h3>
+  </div>
 </body>
 </html>
+

@@ -20,24 +20,23 @@
       position: relative;
     }
 
-    h1 {
-      font-size: 5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-      margin: 0.2rem;
-    }
-
     .bottom-text {
-      position: absolute;
-      bottom: 30px;
+      position: fixed;
+      bottom: 20px;
       width: 100%;
       text-align: center;
       font-size: 1.25rem;
       color: #00aaff;
+      padding: 0 16px;
+      background: rgba(0, 0, 0, 0.4); /* Optional: subtle background for readability */
       white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .bottom-text {
+        font-size: 1rem;
+        white-space: normal;
+      }
     }
   </style>
 </head>
